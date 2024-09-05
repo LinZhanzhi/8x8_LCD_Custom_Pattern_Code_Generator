@@ -1,0 +1,38 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+    /* Prevent text selection */
+}
+
+.cell.on {
+    background-color: green;
+}
+
+.code {
+    white-space: pre;
+    font-family: monospace;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.message {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
